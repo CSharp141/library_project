@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load bootstrap5 %}
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
+    </head>
+    <body>
+        <section class = "vh-100" style = "background-color: #f5f2f0;">
+            <div class="h-100 d-flex flex-column align-items-center justify-content-center">
+                <form class="w-50 bg-white rounded p-4">
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="{% static 'images/libraryLogo.jpg' %}" class="img-fluid mb-4 align-self-center" alt="library Logo">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="userName">Username:</label>
+                        <input type="text" class="form-control" id="userName" placeholder="Username">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                    <div class="form-group d-flex justify-content-between">
+                        <button type="submit" class="btn btn-primary w-100 mb-2">Login</button>
+                        <a href="{% url 'signup' %}" class = "w-100"><button type="button" class="btn btn-secondary w-100 mb-2">Register</button></a>
+                    </div>
+                </form>
+            </div>
+            
+        </section>
+        
+    </body>
+</html>
