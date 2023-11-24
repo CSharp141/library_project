@@ -1,8 +1,12 @@
+from django.dispatch import receiver
 from django.shortcuts import render, redirect
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout 
 from .forms import signUpForm, LoginForm
+from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.contrib.auth.models import Group
+from django.contrib.auth.signals import user_logged_out
+from .models import Books
 
 # Create your views here.
 def user_signup(request):
@@ -39,11 +43,27 @@ def user_login(request):
             if user:
                 login(request, user)
                 print("logic success")
-                messages.success(request, 'Login successful.')    
+                messages.success(request, 'Login successful.')
+                return redirect('homePage')   
                 
     else:
         form = LoginForm()
     return render(request, 'login.html', {'form': form})
 
-def success(request):
-    return render(request, 'registerSuccess.html')
+@login_required(login_url='login')
+def user_HomePage(request):
+    return render(request, 'homePage.html')
+
+def user_logout(request):
+    logout(request)
+    return redirect('login')
+
+
+@receiver(user_logged_out)
+def on_user_logged_out(sender, request, **kwargs):
+    messages.add_message(request, messages.INFO, 'Logged out.')
+
+@login_required(login_url='login')
+def book_list(request):
+    books = Books.objects.all()
+    return render(request, 'catalogue.html', {'books': books})

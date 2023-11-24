@@ -1,188 +1,176 @@
-Title,Author,Genre,SubGenre
-Fundamentals of Wavelets,"Goswami, Jaideva",tech,signal_processing
-Data Smart,"Foreman, John",tech,data_science
-God Created the Integers,"Hawking, Stephen",tech,mathematics
-Superfreakonomics,"Dubner, Stephen",science,economics
-Orientalism,"Said, Edward",nonfiction,history
-"Nature of Statistical Learning Theory, The","Vapnik, Vladimir",tech,data_science
-Integration of the Indian States,"Menon, V P",nonfiction,history
-"Drunkard's Walk, The","Mlodinow, Leonard",science,mathematics
-Image Processing & Mathematical Morphology,"Shih, Frank",tech,signal_processing
-How to Think Like Sherlock Holmes,"Konnikova, Maria",nonfiction,psychology
-Data Scientists at Work,Sebastian Gutierrez,tech,data_science
-Slaughterhouse Five,"Vonnegut, Kurt",fiction,classic
-Birth of a Theorem,"Villani, Cedric",science,mathematics
-Structure & Interpretation of Computer Programs,"Sussman, Gerald",tech,computer_science
-"Age of Wrath, The","Eraly, Abraham",nonfiction,history
-"Trial, The","Kafka, Frank",fiction,classic
-Statistical Decision Theory',"Pratt, John",tech,data_science
-Data Mining Handbook,"Nisbet, Robert",tech,data_science
-"New Machiavelli, The","Wells, H. G.",fiction,novel
-Physics & Philosophy,"Heisenberg, Werner",philosophy,science
-Making Software,"Oram, Andy",tech,computer_science
-"Analysis, Vol I","Tao, Terence",tech,mathematics
-Machine Learning for Hackers,"Conway, Drew",tech,data_science
-"Signal and the Noise, The","Silver, Nate",tech,data_science
-Python for Data Analysis,"McKinney, Wes",tech,data_science
-Introduction to Algorithms,"Cormen, Thomas",tech,computer_science
-"Beautiful and the Damned, The","Deb, Siddhartha",nonfiction,history
-"Outsider, The","Camus, Albert",fiction,classic
-"Complete Sherlock Holmes, The - Vol I","Doyle, Arthur Conan",fiction,classic
-"Complete Sherlock Holmes, The - Vol II","Doyle, Arthur Conan",fiction,classic
-"Wealth of Nations, The","Smith, Adam",science,economics
-"Pillars of the Earth, The","Follett, Ken",fiction,novel
-Mein Kampf,"Hitler, Adolf",nonfiction,autobiography
-"Tao of Physics, The","Capra, Fritjof",science,physics
-Surely You're Joking Mr Feynman,"Feynman, Richard",science,physics
-"Farewell to Arms, A","Hemingway, Ernest",fiction,classic
-"Veteran, The","Forsyth, Frederick",fiction,novel
-False Impressions,"Archer, Jeffery",fiction,novel
-"Last Lecture, The","Pausch, Randy",nonfiction,autobiography
-Return of the Primitive,"Rand, Ayn",philosophy,objectivism
-Jurassic Park,"Crichton, Michael",fiction,novel
-"Russian Journal, A","Steinbeck, John",nonfiction,history
-Tales of Mystery and Imagination,"Poe, Edgar Allen",fiction,classic
-Freakonomics,"Dubner, Stephen",science,economics
-"Hidden Connections, The","Capra, Fritjof",science,physics
-"Story of Philosophy, The","Durant, Will",philosophy,history
-Asami Asami,"Deshpande, P L",fiction,novel
-Journal of a Novel,"Steinbeck, John",fiction,classic
-Once There Was a War,"Steinbeck, John",nonfiction,history
-"Moon is Down, The","Steinbeck, John",fiction,classic
-"Brethren, The","Grisham, John",fiction,novel
-In a Free State,"Naipaul, V. S.",fiction,novel
-Catch 22,"Heller, Joseph",fiction,classic
-"Complete Mastermind, The",BBC,nonfiction,trivia
-Dylan on Dylan,"Dylan, Bob",nonfiction,autobiography
-Soft Computing & Intelligent Systems,"Gupta, Madan",tech,data_science
-Textbook of Economic Theory,"Stonier, Alfred",tech,economics
-Econometric Analysis,"Greene, W. H.",tech,economics
-Learning OpenCV,"Bradsky, Gary",tech,signal_processing
-Data Structures Using C & C++,"Tanenbaum, Andrew",tech,computer_science
-"Computer Vision, A Modern Approach","Forsyth, David",tech,signal_processing
-Principles of Communication Systems,"Taub, Schilling",tech,signal_processing
-Let Us C,"Kanetkar, Yashwant",tech,computer_science
-"Amulet of Samarkand, The","Stroud, Jonathan",fiction,novel
-Crime and Punishment,"Dostoevsky, Fyodor",fiction,classic
-Angels & Demons,"Brown, Dan",fiction,novel
-"Argumentative Indian, The","Sen, Amartya",nonfiction,history
-Sea of Poppies,"Ghosh, Amitav",fiction,novel
-"Idea of Justice, The","Sen, Amartya",philosophy,economics
-"Raisin in the Sun, A","Hansberry, Lorraine",fiction,novel
-All the President's Men,"Woodward, Bob",nonfiction,history
-"Prisoner of Birth, A","Archer, Jeffery",fiction,novel
-Scoop!,"Nayar, Kuldip",nonfiction,history
-Ahe Manohar Tari,"Deshpande, Sunita",nonfiction,autobiography
-"Last Mughal, The","Dalrymple, William",nonfiction,history
-"Social Choice & Welfare, Vol 39 No. 1",Various,tech,economics
-Radiowaril Bhashane & Shrutika,"Deshpande, P L",nonfiction,misc
-Gun Gayin Awadi,"Deshpande, P L",nonfiction,misc
-Aghal Paghal,"Deshpande, P L",nonfiction,misc
-Maqta-e-Ghalib,"Garg, Sanjay",nonfiction,poetry
-Manasa,"Kale, V P",nonfiction,misc
-India from Midnight to Milennium,"Tharoor, Shashi",nonfiction,history
-"Great Indian Novel, The","Tharoor, Shashi",fiction,novel
-O Jerusalem!,"Lapierre, Dominique",nonfiction,history
-"City of Joy, The","Lapierre, Dominique",fiction,novel
-Freedom at Midnight,"Lapierre, Dominique",nonfiction,history
-"Winter of Our Discontent, The","Steinbeck, John",fiction,classic
-On Education,"Russell, Bertrand",philosophy,education
-Free Will,"Harris, Sam",nonfiction,psychology
-Bookless in Baghdad,"Tharoor, Shashi",nonfiction,history
-"Case of the Lame Canary, The","Gardner, Earle Stanley",fiction,novel
-"Theory of Everything, The","Hawking, Stephen",science,physics
-New Markets & Other Essays,"Drucker, Peter",science,economics
-Electric Universe,"Bodanis, David",science,physics
-"Hunchback of Notre Dame, The","Hugo, Victor",fiction,classic
-Burning Bright,"Steinbeck, John",fiction,classic
-"Age of Discontuinity, The","Drucker, Peter",nonfiction,economics
-Doctor in the Nude,"Gordon, Richard",fiction,novel
-Down and Out in Paris & London,"Orwell, George",nonfiction,autobiography
-Identity & Violence,"Sen, Amartya",philosophy,philosophy
-Beyond the Three Seas,"Dalrymple, William",nonfiction,history
-Talking Straight,"Iacoca, Lee",nonfiction,autobiography
-"Maugham's Collected Short Stories, Vol 3","Maugham, William S",fiction,classic
-"Phantom of Manhattan, The","Forsyth, Frederick",fiction,classic
-Ashenden of The British Agent,"Maugham, William S",fiction,classic
-Zen & The Art of Motorcycle Maintenance,"Pirsig, Robert",philosophy,autobiography
-"Great War for Civilization, The","Fisk, Robert",nonfiction,history
-We the Living,"Rand, Ayn",fiction,novel
-"Artist and the Mathematician, The","Aczel, Amir",science,mathematics
-History of Western Philosophy,"Russell, Bertrand",philosophy,philosophy
-Rationality & Freedom,"Sen, Amartya",science,economics
-Clash of Civilizations and Remaking of the World Order,"Huntington, Samuel",nonfiction,history
-Uncommon Wisdom,"Capra, Fritjof",nonfiction,anthology
-One,"Bach, Richard",nonfiction,autobiography
-To Sir With Love,Braithwaite,fiction,classic
-Half A Life,"Naipaul, V S",fiction,novel
-"Discovery of India, The","Nehru, Jawaharlal",nonfiction,history
-Apulki,"Deshpande, P L",nonfiction,misc
-Unpopular Essays,"Russell, Bertrand",philosophy,philosophy
-"Deceiver, The","Forsyth, Frederick",fiction,novel
-Veil: Secret Wars of the CIA,"Woodward, Bob",nonfiction,history
-Char Shabda,"Deshpande, P L",nonfiction,misc
-Rosy is My Relative,"Durrell, Gerald",fiction,novel
-"Moon and Sixpence, The","Maugham, William S",fiction,classic
-"Short History of the World, A","Wells, H G",nonfiction,history
-"Trembling of a Leaf, The","Maugham, William S",fiction,novel
-Doctor on the Brain,"Gordon, Richard",fiction,novel
-Simpsons & Their Mathematical Secrets,"Singh, Simon",science,mathematics
-Pattern Classification,"Duda, Hart",tech,data_science
-From Beirut to Jerusalem,"Friedman, Thomas",nonfiction,history
-"Code Book, The","Singh, Simon",science,mathematics
-"Age of the Warrior, The","Fisk, Robert",nonfiction,history
-"Numbers Behind Numb3rs, The","Devlin, Keith",science,mathematics
-"Life in Letters, A","Steinbeck, John",nonfiction,autobiography
-"Information, The","Gleick, James",science,mathematics
-Elements of Information Theory,"Thomas, Joy",tech,signal_processing
-Power Electronics - Rashid,"Rashid, Muhammad",tech,computer_science
-Power Electronics - Mohan,"Mohan, Ned",tech,computer_science
-Neural Networks,"Haykin, Simon",tech,data_science
-"Grapes of Wrath, The","Steinbeck, John",fiction,classic
-Vyakti ani Valli,"Deshpande, P L",nonfiction,misc
-Statistical Learning Theory,"Vapnik, Vladimir",tech,data_science
-Empire of the Mughal - The Tainted Throne,"Rutherford, Alex",nonfiction,history
-Empire of the Mughal - Brothers at War,"Rutherford, Alex",nonfiction,history
-Empire of the Mughal - Ruler of the World,"Rutherford, Alex",nonfiction,history
-Empire of the Mughal - The Serpent's Tooth,"Rutherford, Alex",nonfiction,history
-Empire of the Mughal - Raiders from the North,"Rutherford, Alex",nonfiction,history
-Mossad,"Baz-Zohar, Michael",nonfiction,history
-Jim Corbett Omnibus,"Corbett, Jim",nonfiction,history
-20000 Leagues Under the Sea,"Verne, Jules",fiction,novel
-Batatyachi Chal,Deshpande P L,fiction,novel
-Hafasavnuk,Deshpande P L,fiction,novel
-Urlasurla,Deshpande P L,fiction,novel
-Pointers in C,"Kanetkar, Yashwant",tech,computer_science
-"Cathedral and the Bazaar, The","Raymond, Eric",tech,computer_science
-Design with OpAmps,"Franco, Sergio",tech,computer_science
-Think Complexity,"Downey, Allen",tech,data_science
-"Devil's Advocate, The","West, Morris",fiction,novel
-Ayn Rand Answers,"Rand, Ayn",philosophy,objectivism
-Philosophy: Who Needs It,"Rand, Ayn",philosophy,objectivism
-Data Analysis with Open Source Tools,"Janert, Phillip",tech,data_science
-Broca's Brain,"Sagan, Carl",science,physics
-Men of Mathematics,"Bell, E T",science,mathematics
-Oxford book of Modern Science Writing,"Dawkins, Richard",science,science
-"Justice, Judiciary and Democracy","Ranjan, Sudhanshu",nonfiction,legal
-"Arthashastra, The",Kautiyla,philosophy,philosophy
-We the People,Palkhivala,philosophy,philosophy
-We the Nation,Palkhivala,philosophy,philosophy
-"Courtroom Genius, The",Sorabjee,nonfiction,autobiography
-Dongri to Dubai,"Zaidi, Hussain",nonfiction,history
-"History of England, Foundation","Ackroyd, Peter",nonfiction,history
-City of Djinns,"Dalrymple, William",nonfiction,history
-India's Legal System,Nariman,nonfiction,legal
-More Tears to Cry,"Sassoon, Jean",fiction,novel
-"Ropemaker, The","Dickinson, Peter",fiction,novel
-Angels & Demons,"Brown, Dan",fiction,novel
-"Prince, The",Machiavelli,fiction,classic
-Eyeless in Gaza,"Huxley, Aldous",fiction,novel
-Tales of Beedle the Bard,"Rowling, J K",fiction,novel
-Girl with the Dragon Tattoo,"Larsson, Steig",fiction,novel
-Girl who kicked the Hornet's Nest,"Larsson, Steig",fiction,novel
-Girl who played with Fire,"Larsson, Steig",fiction,novel
-Structure and Randomness,"Tao, Terence",science,mathematics
-Image Processing with MATLAB,"Eddins, Steve",tech,signal_processing
-Animal Farm,"Orwell, George",fiction,classic
-"Idiot, The","Dostoevsky, Fyodor",fiction,classic
-"Christmas Carol, A","Dickens, Charles",fiction,classic
+﻿Title,Author,Genre,SubGenre,,
+Fundamentals of Wavelets,Jaideva Goswami,Tech,Signal Processing,,
+Data Smart,John Foreman,Tech,Data Science,,
+God Created the Integers,Stephen Hawking,Tech,Mathematics,,
+Superfreakonomics,Stephen Dubner,Science,Economics,,
+Orientalism,Edward Said,Nonfiction,History,,
+The Nature of Statistical Learning Theory,Vladimir Vapnik,Tech,Data Science,,
+Integration of the Indian States,V P Menon,Nonfiction,History,,
+The Drunkard's Walk,Leonard Mlodinow,Science,Mathematics,,
+Image Processing & Mathematical Morphology,Frank Shih,Tech,Signal Processing,,
+How to Think Like Sherlock Holmes,Maria Konnikova,Nonfiction,Psychology,,
+Data Scientists at Work,Sebastian Gutierrez,Tech,Data Science,,
+Slaughterhouse Five,Kurt Vonnegut,Fiction,Classic,,
+Birth of a Theorem,Cedric Villani,Science,Mathematics,,
+Structure & Interpretation of Computer Programs,Gerald Sussman,Tech,Computer Science,,
+The Age of Wrath,Abraham Eraly,Nonfiction,History,,
+The Trial,Frank Kafka,Fiction,Classic,,
+Statistical Decision Theory,John Pratt,Tech,Data Science,,
+Data Mining Handbook,Robert Nisbet,Tech,Data Science,,
+The New Machiavelli,H. G. Wells,Fiction,Novel,,
+Physics & Philosophy,Werner Heisenberg,Philosophy,Science,,
+Making Software,Andy Oram,Tech,Computer Science,,
+Machine Learning for Hackers,Drew Conway,Tech,Data Science,,
+The Signal and the Noise,Nate Silver,Tech,Data Science,,
+Python for Data Analysis,Wes McKinney,Tech,Data Science,,
+Introduction to Algorithms,Thomas Cormen,Tech,Computer Science,,
+The Beautiful and the Damned,Siddhartha Deb,Nonfiction,History,,
+The Outsider,Albert Camus,Fiction,Classic,,
+The Complete Sherlock Holmes - Vol I,Arthur Conan Doyle,Fiction,Classic,,
+The  Complete Sherlock Holmes - Vol II,Arthur Conan Doyle,Fiction,Classic,,
+The Wealth of Nations,Adam Smith,Science,Economics,,
+The Pillars of the Earth,Ken Follett,Fiction,Novel,,
+The Tao of Physics,Fritjof Capra,Science,Physics,,
+Surely You're Joking Mr Feynman,Richard Feynman,Science,Physics,,
+A Farewell to Arms,Ernest Hemingway,Fiction,Classic,,
+The Veteran,Frederick Forsyth,Fiction,Novel,,
+False Impressions,Jeffery Archer,Fiction,Novel,,
+The Last Lecture,Randy Pausch,Nonfiction,Autobiography,,
+Return of the Primitive,Ayn Rand,Philosophy,Objectivism,,
+Jurassic Park,Michael Crichton,Fiction,Novel,,
+A Russian Journal,John Steinbeck,Nonfiction,History,,
+Tales of Mystery and Imagination,Edgar Allen Poe,Fiction,Classic,,
+Freakonomics,Stephen Dubner,Science,Economics,,
+The Hidden Connections,Fritjof Capra,Science,Physics,,
+The Story of Philosophy,Will Durant,Philosophy,History,,
+Asami Asami,P L Deshpande,Fiction,Novel,,
+Journal of a Novel,John Steinbeck,Fiction,Classic,,
+Once There Was a War,John Steinbeck,Nonfiction,History,,
+The Moon is Down,John Steinbeck,Fiction,Classic,,
+The Brethren,John Grisham,Fiction,Novel,,
+In a Free State,V. S. Naipaul,Fiction,Novel,,
+Catch 22,Joseph Heller,Fiction,Classic,,
+Dylan on Dylan,Bob Dylan,Nonfiction,Autobiography,,
+Soft Computing & Intelligent Systems,Madan Gupta,Tech,Data Science,,
+Textbook of Economic Theory,Alfred Stonier,Tech,Economics,,
+Econometric Analysis,W. H. Greene,Tech,Economics,,
+Learning OpenCV,Gary Bradsky,Tech,Signal Processing,,
+Data Structures Using C & C++,Andrew Tanenbaum,Tech,Computer Science,,
+A Modern Approach Computer Vision,David Forsyth,Tech,Signal Processing,,
+Principles of Communication Systems,Schilling Taub,Tech,Signal Processing,,
+Let Us C,Yashwant Kanetkar,Tech,Computer Science,,
+The Amulet of Samarkand,Jonathan Stroud,Fiction,Novel,,
+Crime and Punishment,Fyodor Dostoevsky,Fiction,Classic,,
+Angels & Demons,Dan Brown,Fiction,Novel,,
+The Argumentative Indian,Amartya Sen,Nonfiction,History,,
+Sea of Poppies,Amitav Ghosh,Fiction,Novel,,
+The Idea of Justice,Amartya Sen,Philosophy,Economics,,
+A Raisin in the Sun,Lorraine Hansberry,Fiction,Novel,,
+All the President's Men,Bob Woodward,Nonfiction,History,,
+A Prisoner of Birth,Jeffery Archer,Fiction,Novel,,
+Scoop!,Kuldip Nayar,Nonfiction,History,,
+India from Midnight to Milennium,Shashi Tharoor,Nonfiction,History,,
+The Great Indian Novel,Shashi Tharoor,Fiction,Novel,,
+O Jerusalem!,Dominique Lapierre,Nonfiction,History,,
+The City of Joy,Dominique Lapierre,Fiction,Novel,,
+Freedom at Midnight,Dominique Lapierre,Nonfiction,History,,
+The Winter of Our Discontent,John Steinbeck,Fiction,Classic,,
+On Education,Bertrand Russell,Philosophy,Education,,
+Free Will,Sam Harris,Nonfiction,Psychology,,
+Bookless in Baghdad,Shashi Tharoor,Nonfiction,History,,
+The Case of the Lame Canary,Earle Stanley Gardner,Fiction,Novel,,
+The Theory of Everything,Stephen Hawking,Science,Physics,,
+New Markets & Other Essays,Peter Drucker,Science,Economics,,
+Electric Universe,David Bodanis,Science,Physics,,
+The Hunchback of Notre Dame,Victor Hugo,Fiction,Classic,,
+Burning Bright,John Steinbeck,Fiction,Classic,,
+The Age of Discontuinity,Peter Drucker,Nonfiction,Economics,,
+Doctor in the Nude,Richard Gordon,Fiction,Novel,,
+Down and Out in Paris & London,George Orwell,Nonfiction,Autobiography,,
+Identity & Violence,Amartya Sen,Philosophy,Philosophy,,
+Beyond the Three Seas,William Dalrymple,Nonfiction,History,,
+Talking Straight,Lee Iacoca,Nonfiction,Autobiography,,
+Maugham's Collected Short Stories Vol 3,William S Maugham,Fiction,Classic,,
+The Phantom of Manhattan,Frederick Forsyth,Fiction,Classic,,
+Ashenden of The British Agent,William S Maugham,Fiction,Classic,,
+Zen & The Art of Motorcycle Maintenance,Robert Pirsig,Philosophy,Autobiography,,
+The Great War for Civilization,Robert Fisk,Nonfiction,History,,
+We the Living,Ayn Rand,Fiction,Novel,,
+The Artist and the Mathematician,Amir Aczel,Science,Mathematics,,
+History of Western Philosophy,Bertrand Russell,Philosophy,Philosophy,,
+Rationality & Freedom,Amartya Sen,Science,Economics,,
+Clash of Civilizations and Remaking of the World Order,Samuel Huntington,Nonfiction,History,,
+Uncommon Wisdom,Fritjof Capra,Nonfiction,Anthology,,
+One,Richard Bach,Nonfiction,Autobiography,,
+To Sir With Love,Braithwaite,Fiction,Classic,,
+Half A Life,V S Naipaul,Fiction,Novel,,
+The Discovery of India,Jawaharlal Nehru,Nonfiction,History,,
+Apulki,P L Deshpande,Nonfiction,Misc,,
+Unpopular Essays,Bertrand Russell,Philosophy,Philosophy,,
+The Deceiver,Frederick Forsyth,Fiction,Novel,,
+Veil: Secret Wars of the CIA,Bob Woodward,Nonfiction,History,,
+Char Shabda,P L Deshpande,Nonfiction,Misc,,
+Rosy is My Relative,Gerald Durrell,Fiction,Novel,,
+The Moon and Sixpence,William S Maugham,Fiction,Classic,,
+A Short History of the World,H G Wells,Nonfiction,History,,
+The Trembling of a Leaf,William S Maugham,Fiction,Novel,,
+Doctor on the Brain,Richard Gordon,Fiction,Novel,,
+Simpsons & Their Mathematical Secrets,Simon Singh,Science,Mathematics,,
+Pattern Classification,Hart Duda,Tech,Data Science,,
+From Beirut to Jerusalem,Thomas Friedman,Nonfiction,History,,
+The Code Book,Simon Singh,Science,Mathematics,,
+The Age of the Warrior,Robert Fisk,Nonfiction,History,,
+The Numbers Behind Numb3rs,Keith Devlin,Science,Mathematics,,
+A Life in Letters,John Steinbeck,Nonfiction,Autobiography,,
+The Information,James Gleick,Science,Mathematics,,
+Elements of Information Theory,Joy Thomas,Tech,Signal Processing,,
+Power Electronics - Rashid,Muhammad Rashid,Tech,Computer Science,,
+Power Electronics - Mohan,Ned Mohan,Tech,Computer Science,,
+Neural Networks,Simon Haykin,Tech,Data Science,,
+The Grapes of Wrath,John Steinbeck,Fiction,Classic,,
+Vyakti ani Valli,P L Deshpande,Nonfiction,Misc,,
+Statistical Learning Theory,Vladimir Vapnik,Tech,Data Science,,
+Empire of the Mughal - The Tainted Throne,Alex Rutherford,Nonfiction,History,,
+Empire of the Mughal - Brothers at War,Alex Rutherford,Nonfiction,History,,
+Empire of the Mughal - Ruler of the World,Alex Rutherford,Nonfiction,History,,
+Empire of the Mughal - The Serpent's Tooth,Alex Rutherford,Nonfiction,History,,
+Empire of the Mughal - Raiders from the North,Alex Rutherford,Nonfiction,History,,
+Jim Corbett Omnibus,Jim Corbett,Nonfiction,History,,
+20000 Leagues Under the Sea,Jules Verne,Fiction,Novel,,
+Batatyachi Chal,Deshpande P L,Fiction,Novel,,
+Hafasavnuk,Deshpande P L,Fiction,Novel,,
+Urlasurla,Deshpande P L,Fiction,Novel,,
+Pointers in C,Yashwant Kanetkar,Tech,Computer Science,,
+The Cathedral and the Bazaar,Eric Raymond,Tech,Computer Science,,
+Design with OpAmps,Sergio Franco,Tech,Computer Science,,
+Think Complexity,Allen Downey,Tech,Data Science,,
+The Devil's Advocate,Morris West,Fiction,Novel,,
+Ayn Rand Answers,Ayn Rand,Philosophy,Objectivism,,
+Philosophy: Who Needs It,Ayn Rand,Philosophy,Objectivism,,
+Data Analysis with Open Source Tools,Phillip Janert,Tech,Data Science,,
+Broca's Brain,Carl Sagan,Science,Physics,,
+Men of Mathematics,E T Bell,Science,Mathematics,,
+Oxford book of Modern Science Writing,Richard Dawkins,Science,Science,,
+Judiciary and Democracy Justice,Sudhanshu Ranjan,Nonfiction,Legal,,
+The Arthashastra,Kautiyla,Philosophy,Philosophy,,
+We the People,Palkhivala,Philosophy,Philosophy,,
+We the Nation,Palkhivala,Philosophy,Philosophy,,
+The Courtroom Genius,Sorabjee,Nonfiction,Autobiography,,
+Dongri to Dubai,Hussain Zaidi,Nonfiction,History,,
+Foundation History of England,Peter Ackroyd,Nonfiction,History,,
+City of Djinns,William Dalrymple,Nonfiction,History,,
+India's Legal System,Nariman,Nonfiction,Legal,,
+More Tears to Cry,Jean Sassoon,Fiction,Novel,,
+The Ropemaker,Peter Dickinson,Fiction,Novel,,
+Angels & Demons,Dan Brown,Fiction,Novel,,
+The Prince,Machiavelli,Fiction,Classic,,
+Eyeless in Gaza,Aldous Huxley,Fiction,Novel,,
+Tales of Beedle the Bard,J K Rowling,Fiction,Novel,,
+Girl with the Dragon Tattoo,Steig Larsson,Fiction,Novel,,
+Girl who kicked the Hornet's Nest,Steig Larsson,Fiction,Novel,,
+Girl who played with Fire,Steig Larsson,Fiction,Novel,,
+Structure and Randomness,Terence Tao,Science,Mathematics,,
+Image Processing with MATLAB,Steve Eddins,Tech,Signal Processing,,
+Animal Farm,George Orwell,Fiction,Classic,,
+The Idiot,Fyodor Dostoevsky,Fiction,Classic,,
+A Christmas Carol,Charles Dickens,Fiction,Classic,,
