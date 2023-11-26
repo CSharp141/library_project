@@ -1,0 +1,116 @@
+{% load static %}
+<html>
+    <head>
+        {% load bootstrap5 %}
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
+    </head>
+    <body style="background-color: #f5f2f0;">
+        {% block content %}
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+            <a class="navbar-brand">
+                <img src="{% static 'images\libraryLogoNavbarBlue.png' %}" alt="Logo" height="30">
+            </a>
+            <div class="d-flex flex-column ms-auto ">
+                <strong>User Name: {{user.username}}</strong>
+                <strong>Group: {{user_group.name}}</strong>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'homePage' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'catalogue' %}">View/Borrow Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'booksOnLoan' %}">View Current Loans</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'userLateFees' %}">
+                            {% if user_group.name == 'Staff' %}
+                                Manage Late Fees
+                            {% else %}
+                                View Late Fees
+                            {% endif %}
+                        </a>
+                    </li>
+                    {% if user_group.name == 'Staff' %}
+                    <li class="nav-item">
+                        <a class = "nav-link" href="{% url 'processReturns'%}">Manage All Loans</a>
+                    </li>
+                    {% endif %}
+
+                    {% if user_group.name == 'Librarian' %}
+                    <li class="nav-item">
+                        <a class = "nav-link" href="{% url 'addNewBook'%}">Add New Book</a>
+                    </li>
+                    {% endif %}
+
+                    {% if user_group.name == 'Admin' %}
+                    <li class="nav-item">
+                        <a class = "nav-link" href="{% url 'adminManageUsers'%}">Manage Users</a>
+                    </li>
+                    {% endif %}
+                    <lu class = "nav-item">
+                        <a class = "nav-link" href = "{% url 'logout' %}">Log Out</a>
+                    </lu>
+
+                </ul>
+            </div>
+        </nav>
+        <div class="container mt-4">
+            <h2>Manage All Loans</h2>
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-warning">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+
+            <form method="get" action="{% url 'processReturns' %}" class="mb-3">
+                <div class="input-group">
+                    <input type="text" name="search_username" class="form-control" placeholder="Search by Username..." value="{{ search_username }}">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                    <a href="{% url 'processReturns' %}"><button class="btn btn-secondary">Reset</button></a>
+                </div>
+            </form>
+
+            <table class="table table-striped">
+            <thead>
+                <tr>
+                <th>Username</th>
+                <th>Book Title</th>
+                <th>Loan Date</th>
+                <th>Action</th>
+                <th>Issue Late fee</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for loan in loans %}
+                <tr>
+                    <td>{{ loan.user__username }}</td>
+                    <td>{{ loan.book__title }}</td>
+                    <td>{{ loan.loan_date }}</td>
+                    <td>
+                    <form method="post">
+                        {% csrf_token %}
+                        <input type="hidden" name="loan_id" value="{{ loan.loan_id }}">
+                        <button type="submit" class="btn btn-primary">Process Return</button>
+                    </form>
+                    </td>
+                    <td>
+                        <a href = "{% url 'issueLateFee' loan.loan_id %}"><button class = "btn btn-danger">Issue Late Fee</button></a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+            </table>
+        </div>
+        {% endblock %}
+    </body>
+</html>

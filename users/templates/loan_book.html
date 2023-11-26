@@ -1,0 +1,22 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        {% block content %}
+            <div class="container">
+                <h2>Loan Book</h2>
+                
+                <p>Book: {{ book.title }}</p>
+                <p>Author: {{ book.author }}</p>
+
+                <form method="post" action="{% url 'loan_book' book.id %}">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-success">Confirm Loan</button>
+                </form>
+                
+                <a href="{% url 'catalogue' %}" class="btn btn-secondary">Back to Catalogue</a>
+            </div>
+        {% endblock %}
+    </body>
+</html>

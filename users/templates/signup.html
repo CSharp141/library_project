@@ -1,7 +1,8 @@
-{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
+        {% load crispy_forms_tags %}
+        {% load static %}
         {% load bootstrap5 %}
         {% bootstrap_css %}
         {% bootstrap_javascript %}
@@ -15,7 +16,7 @@
                     <div class="d-flex flex-column align-items-center">
                         <img src="{% static 'images/libraryLogo.jpg' %}" class="img-fluid mb-4 align-self-center" alt="library Logo">
                     </div>
-                    {{ form.as_p }}
+                    {{ form|crispy}}
                     <div class="d-flex justify-content-between">
                         <button type="submit" class="btn btn-primary w-100 mb-2">Create account</button>
                     </div>

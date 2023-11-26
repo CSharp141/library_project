@@ -1,3 +1,4 @@
+{% load static %}
 <html>
     <head>
         {% load bootstrap5 %}
@@ -6,9 +7,79 @@
     </head>
     <body>
         <section class="min-vh-100" style="background-color: #f5f2f0;">
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+                <a class="navbar-brand">
+                    <img src="{% static 'images\libraryLogoNavbarBlue.png' %}" alt="Logo" height="30">
+                </a>
+                <div class="d-flex flex-column ms-auto ">
+                    <strong>User Name: {{user.username}}</strong>
+                    <strong>Group: {{user_group.name}}</strong>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'homePage' %}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'catalogue' %}">View/Borrow Books</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'booksOnLoan' %}">View Current Loans</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'userLateFees' %}">
+                                {% if user_group.name == 'Staff' %}
+                                    Manage Late Fees
+                                {% else %}
+                                    View Late Fees
+                                {% endif %}
+                            </a>
+                        </li>
+                        {% if user_group.name == 'Staff' %}
+                        <li class="nav-item">
+                            <a class = "nav-link" href="{% url 'processReturns'%}">Manage All Loans</a>
+                        </li>
+                        {% endif %}
+
+                        {% if user_group.name == 'Librarian' %}
+                        <li class="nav-item">
+                            <a class = "nav-link" href="{% url 'addNewBook'%}">Add New Book</a>
+                        </li>
+                        {% endif %}
+
+                        {% if user_group.name == 'Admin' %}
+                        <li class="nav-item">
+                            <a class = "nav-link" href="{% url 'adminManageUsers'%}">Manage Users</a>
+                        </li>
+                        {% endif %}
+                        <lu class = "nav-item">
+                            <a class = "nav-link" href = "{% url 'logout' %}">Log Out</a>
+                        </lu>
+
+                    </ul>
+                </div>
+            </nav>
+            
             {% block content %}
             <div class="container">
                 <h2>Catalogue</h2>
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert alert-success">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+                <form method="get" action="{% url 'catalogue' %}" class="mb-3">
+                    <div class="input-group">
+                        <input type="text" name="q" class="form-control" placeholder="Title Name..." value="{{ request.GET.q }}">
+                        <button type="submit" class="btn btn-primary">Search</button>
+                        <a href="{% url 'catalogue' %}" class="btn btn-secondary">Reset Search</a>
+                    </div>
+                </form>
                 <table class="table">
                     <thead>
                         <tr>
@@ -16,7 +87,12 @@
                             <th>Author</th>
                             <th>Genre</th>
                             <th>Subgenre</th>
+                            <th>Book ID</th>
                             <th>Avaliable</th>
+                            <th>Borrow Book</th>
+                            {% if user_group.name == 'Librarian' %}
+                                <th>Edit Book Details</th>
+                            {% endif %}
                         </tr>
                     </thead>
                     <tbody>
@@ -26,6 +102,7 @@
                                 <td>{{ book.author }}</td>
                                 <td>{{ book.genre }}</td>
                                 <td>{{ book.subgenre }}</td>
+                                <td>{{ book.id }}</td>
                                 <td>
                                     {% if book.is_available %}
                                         <span class="text-success">&#10004; Available</span>
@@ -33,11 +110,63 @@
                                         <span class="text-danger">&#10008; Not Available</span>
                                     {% endif %}
                                 </td>
+                                <td>
+                                    {% if book.is_available %}
+                                      <form method="post" action="{% url 'loan_book' book.id %}">
+                                        {% csrf_token %}
+                                        <button type="submit" class="btn btn-success">Loan</button>
+                                      </form>
+                                    {% else %}
+                                      <span class="text-muted">Not Available</span>
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    {% if user_group.name == 'Librarian' %}
+                                        <a href="{% url 'editBook' book.id %}"><button  class="btn btn-primary">Edit</button></a>
+                                        <form method="post" action="{% url 'deleteBook' book.id %}" style="display: inline;">
+                                            {% csrf_token %}
+                                            <button type="submit" class="btn btn-danger">Delete</button>
+                                        </form>
+                                    {% endif %}
+                                </td>
                             </tr>
                         {% endfor %}
                     </tbody>
                 </table>
             </div>
+            <nav aria-label="Page navigation" class="d-flex justify-content-center">
+                <ul class="pagination">
+                    {% if books.has_previous %}
+                        <li class="page-item">
+                            <a class="page-link" href="?page=1" aria-label="First">
+                                <span aria-hidden="true">&laquo;&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ books.previous_page_number }}" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                    {% endif %}
+
+                    <li class="page-item disabled">
+                        <span class="page-link">Page {{ books.number }} of {{ books.paginator.num_pages }}</span>
+                    </li>
+
+                    {% if books.has_next %}
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ books.next_page_number }}" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ books.paginator.num_pages }}" aria-label="Last">
+                                <span aria-hidden="true">&raquo;&raquo;</span>
+                            </a>
+                        </li>
+                    {% endif %}
+                </ul>
+            </nav>
             {% endblock %}
         </section>
     </body>
