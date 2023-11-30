@@ -3,7 +3,7 @@
 ## Operation:
 ### 1. Create a virtual environment
 ```bash
-python3 -m venv env
+python -m venv env
 ```
 
 ### 3. Activate virtual environment
