@@ -21,15 +21,13 @@ env\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 5. Navigate to librarySite folder
-```bash
-cd librarySite
-```
-
-### 6. Run server
+### 6. Run server this command must be run from the root folder
 ```bash
 py manage.py runserver
 ```
+
+### 7. Access server
+Navigate to http://127.0.0.1:8000/ in your browser
 
 ## Default Accounts and Passwords 
 ### Student user
