@@ -54,5 +54,4 @@ env/
 env
 users/__pycache__/
 librarySite/__pycache__/
-requirements.txt
 .gitignore
