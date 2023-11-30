@@ -283,7 +283,7 @@ def editUser(request, user_id):
     else:
         form = UserEditForm(instance=user)
 
-    return render(request, 'editUser.html', {'form': form, 'user': user, 'user_group': user_group})
+    return render(request, 'editUser.html', {'form': form, 'user': user, 'user_group': user_group, 'currentUser': currentUser})
 
 @user_passes_test(lambda u: u.groups.filter(name='Admin').exists())
 def deleteUser(request, user_id):
