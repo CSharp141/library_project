@@ -77,22 +77,24 @@
             </thead>
             <tbody>
                 {% for user in users %}
-                <tr>
-                    <td>{{ user.username }}</td>
-                    <td>{{ user.email }}</td>
-                    <td>{{ user.first_name }}</td>
-                    <td>{{ user.last_name }}</td>
-                    <td>{{ user.email }}</td>
-                    <td>
-                    {% for group in user.groups.all %}
-                        {{ group.name }}
-                    {% endfor %}
-                    </td>
-                    <td>
-                        <a href = "{% url 'editUser' user_id=user.id %}"><button class = "btn btn-primary">Edit User</button></a>
-                        <a href = "{% url 'deleteUser' user_id=user.id %}"><button class = "btn btn-danger">Delete User</button></a>
-                    </td>
-                </tr>
+                    {% if user != request.user %}
+                    <tr>
+                        <td>{{ user.username }}</td>
+                        <td>{{ user.email }}</td>
+                        <td>{{ user.first_name }}</td>
+                        <td>{{ user.last_name }}</td>
+                        <td>{{ user.email }}</td>
+                        <td>
+                        {% for group in user.groups.all %}
+                            {{ group.name }}
+                        {% endfor %}
+                        </td>
+                        <td>
+                            <a href = "{% url 'editUser' user_id=user.id %}"><button class = "btn btn-primary">Edit User</button></a>
+                            <a href = "{% url 'deleteUser' user_id=user.id %}"><button class = "btn btn-danger">Delete User</button></a>
+                        </td>
+                    </tr>
+                    {% endif %}
                 {% endfor %}
             </tbody>
             </table>

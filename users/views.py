@@ -266,8 +266,8 @@ def adminManageUsers(request):
 @user_passes_test(lambda u: u.groups.filter(name='Admin').exists())
 def editUser(request, user_id):
     user = get_object_or_404(User, id=user_id)
-    user = request.user
-    user_group = user.groups.first()
+    currentUser = request.user
+    user_group = currentUser.groups.first()
 
     if request.method == 'POST':
         form = UserEditForm(request.POST, instance=user)
@@ -288,8 +288,8 @@ def editUser(request, user_id):
 @user_passes_test(lambda u: u.groups.filter(name='Admin').exists())
 def deleteUser(request, user_id):
     user = get_object_or_404(User, id=user_id)
-    user = request.user
-    user_group = user.groups.first()
+    currentUser = request.user
+    user_group = currentUser.groups.first()
 
     if request.method == 'POST':
         # Handle user deletion
