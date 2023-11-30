@@ -15,7 +15,13 @@
                 <strong>Group: {{user_group.name}}</strong>
             </div>
         </nav>
-        <a href="{% url 'catalogue' %}"><button type="button" class="btn btn-secondary w-100 mb-2">View/Borrow Books</button></a>
+        <a href="{% url 'catalogue' %}"><button type="button" class="btn btn-secondary w-100 mb-2">
+            {% if user_group.name == 'Librarian' %}
+                View/Borrow/Edit Books
+            {% else %}
+                View/Borrow Books
+            {% endif %}
+        </button></a>
         <a href="{% url 'booksOnLoan' %}"><button type="button" class="btn btn-secondary w-100 mb-2">View Current Loans</button></a>
         <a href = "{% url 'userLateFees' %}"><button type="button" class="btn btn-secondary w-100 mb-2">
             {% if user_group.name == 'Staff' %}
