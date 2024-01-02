@@ -3,3 +3,4 @@ django-bootstrap-v5
 django[bcrypt]
 django-crispy-forms
 crispy-bootstrap5
+bcrypt
